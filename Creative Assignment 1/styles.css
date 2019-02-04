@@ -1,0 +1,79 @@
+#header {
+    background-image: url('header.jpg');
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+        
+#footer {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    color: white;
+    background-color: #20294c;
+}
+        
+#container {
+    background-color: #461251;
+    margin-bottom: 10px;
+}
+        
+#border {
+    height: 80%;
+    width: 90%;
+    background-color: #20294c;
+    border-width: 4;
+    border-color: #20294c;
+}
+        
+.dot {
+    background-color: transparent;
+    border-width: 2;
+    border-color: red;
+    display: block;
+    color: transparent;
+    text-align: center;
+    background-image: url('fire.png');
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+        
+a { 
+    color: #242830; 
+}
+        
+div {
+    padding: 20px;
+    background-color: white;
+    background-color: #1f6e96;
+}
+    
+h1 {
+    font-size: 55px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+        
+h2 {
+    font-size: 32px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+        
+l2 {
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+        
+#game {
+    height: 80%;
+    width: 90%;
+    background-color: #461251;
+    cursor: url('dragon.png') 70 70, auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
