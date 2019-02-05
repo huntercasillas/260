@@ -1,0 +1,173 @@
+<html>
+<head>
+    <title>Dog Book</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script src="script.js"></script>
+<script>
+    function playAudio() {
+        var audio = document.getElementById("myAudio");
+        console.log(audio);
+       audio.play();
+ }
+    function bark() {
+        var audio = document.getElementById("myAudio2");
+        console.log(audio);
+       audio.play();
+ }
+
+function goBack() {
+    window.history.back();
+}
+
+</script>
+<style>
+
+div {
+    background-color: #6E8ABC;
+}
+
+#header {
+    height: 38%;
+    width: 100%;
+    border-radius: 0px;
+    background-image: url('header.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    height: 100%;
+}
+
+button{
+  background: rgb(48, 48, 48);
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.4em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background: #6E8ABC;
+  color: rgb(48, 48, 48);
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(48, 48, 48);
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+h2 {
+    font-size: 15;
+}
+
+#spacer {
+    height: 30px;
+}
+
+img { 
+   border:10px solid white;
+}
+
+a {
+    color: white;
+    font-size: 18;
+}
+
+a:hover {
+    color: lightblue;
+}
+    
+</style>
+</head>
+
+<audio id="myAudio">
+  <source src="whoLetDogs.mp3" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="myAudio2">
+  <source src="bark.mp3" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id = "container">
+    <center><div id = "header">
+        </div></center>
+<body ng-app="News">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <ui-view></ui-view>
+        </div>
+    </div>
+    
+
+    <script type="text/ng-template" id="/home.html">
+        <center><h2>(Enable Volume)</h2></center>
+          <form ng-submit="addPost()" style="margin-top:25px;">
+            <center><button type="sumbit" onclick="playAudio()">Generate Dog</button></center>
+        </form>
+        
+        <div ng-repeat="post in posts | orderBy:'-upvotes'">
+            <span class="glyphicon glyphicon-thumbs-up" onclick="bark()" ng-click="incrementUpvotes(post)"></span> {{post.upvotes}}
+            <span style="font-color: white; font-size:20px; margin-left:10px;">
+            <center><img id = "image" height = "400px" width = "400px" src = {{post.image}}></center>
+          
+      </span>
+            <span>
+        <center><a id = "comments" href="#/posts/{{posts.indexOf(post)}}">Comments</a></center>
+      </span>
+        </div>
+        <div id = "spacer"></div>
+        </div>
+
+    </script>
+
+    <script type="text/ng-template" id="/posts.html">
+        <div class="page-header">
+            <h3>
+                {{post.title}}
+            </h3>
+        </div>
+        <button onclick="goBack()">Go Home</button>
+        <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+            <span class="glyphicon glyphicon-thumbs-up" onclick="bark()" ng-click="incrementUpvotes(comment)"></span> {{comment.upvotes}}
+            <span style="font-size:20px; margin-left:10px;">
+        {{comment.body}}
+      </span>
+        </div>
+        <form ng-submit="addComment()" style="margin-top:30px;">
+            <h3>Add a new comment</h3>
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Comment" ng-model="body"></input>
+            </div>
+            <button type="submit">Post</button>
+        </form>
+
+    </script>
+</body>
+
+</html>
