@@ -1,0 +1,302 @@
+nohup: ignoring input
+Connected
+[0mGET / [36m304 [0m5.583 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.234 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m2.942 ms - -[0m
+[0mGET / [36m304 [0m0.657 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.632 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.214 ms - -[0m
+[0mGET / [32m200 [0m4.307 ms - 2278[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.322 ms - 208[0m
+[0mGET /javascripts/comments.js [32m200 [0m2.807 ms - 1407[0m
+[0mGET /favicon.ico [33m404 [0m243.660 ms - 1758[0m
+Error: Failed to lookup view "error" in views directory "/var/www/html/mongo/views"
+    at EventEmitter.render (/var/www/html/mongo/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/var/www/html/mongo/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:635:15
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:260:14)
+Post Route
+{ Name: 'hunter', Comment: 'cas' }
+{ _id: 5bec67f11a644d0d45717459, Name: 'hunter', Comment: 'cas' }
+{ _id: 5bec67f11a644d0d45717459,
+  Name: 'hunter',
+  Comment: 'cas',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m47.421 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec67f11a644d0d45717459,
+    Name: 'hunter',
+    Comment: 'cas',
+    __v: 0 } ]
+[0mGET /comment?q= [32m200 [0m19.537 ms - 76[0m
+In the GET route
+{}
+undefined
+[ { _id: 5bec67f11a644d0d45717459,
+    Name: 'hunter',
+    Comment: 'cas',
+    __v: 0 } ]
+[0mGET /comment [32m200 [0m4.092 ms - 76[0m
+in delete rout
+clear succeeded
+In the GET route
+{ q: '' }
+
+[]
+[0mGET /comment?q= [32m200 [0m2.259 ms - 2[0m
+[0mDELETE /deleteComment [0m- [0m- ms - -[0m
+[0mGET / [32m200 [0m3.640 ms - 2278[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.084 ms - 208[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.584 ms - 1407[0m
+[0mGET /favicon.ico [33m404 [0m3.078 ms - 1758[0m
+Error: Failed to lookup view "error" in views directory "/var/www/html/mongo/views"
+    at EventEmitter.render (/var/www/html/mongo/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/var/www/html/mongo/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo/node_modules/express/lib/router/index.js:635:15
+    at next (/var/www/html/mongo/node_modules/express/lib/router/index.js:260:14)
+Post Route
+{ Name: 'TA', Comment: 'Comment 1' }
+{ _id: 5bec85881a644d0d4571745a,
+  Name: 'TA',
+  Comment: 'Comment 1' }
+{ _id: 5bec85881a644d0d4571745a,
+  Name: 'TA',
+  Comment: 'Comment 1',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m10.215 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 } ]
+[0mGET /comment?q= [32m200 [0m7.897 ms - 78[0m
+Post Route
+{ Name: 'TA', Comment: 'Comment 2' }
+{ _id: 5bec858c1a644d0d4571745b,
+  Name: 'TA',
+  Comment: 'Comment 2' }
+{ _id: 5bec858c1a644d0d4571745b,
+  Name: 'TA',
+  Comment: 'Comment 2',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m2.922 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 },
+  { _id: 5bec858c1a644d0d4571745b,
+    Name: 'TA',
+    Comment: 'Comment 2',
+    __v: 0 } ]
+[0mGET /comment?q= [32m200 [0m4.229 ms - 155[0m
+Post Route
+{ Name: 'TA', Comment: 'Comment 3' }
+{ _id: 5bec85921a644d0d4571745c,
+  Name: 'TA',
+  Comment: 'Comment 3' }
+{ _id: 5bec85921a644d0d4571745c,
+  Name: 'TA',
+  Comment: 'Comment 3',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m4.467 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 },
+  { _id: 5bec858c1a644d0d4571745b,
+    Name: 'TA',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85921a644d0d4571745c,
+    Name: 'TA',
+    Comment: 'Comment 3',
+    __v: 0 } ]
+[0mGET /comment?q= [32m200 [0m4.510 ms - 232[0m
+Post Route
+{ Name: 'TA2', Comment: 'Comment 3' }
+{ _id: 5bec859c1a644d0d4571745d,
+  Name: 'TA2',
+  Comment: 'Comment 3' }
+{ _id: 5bec859c1a644d0d4571745d,
+  Name: 'TA2',
+  Comment: 'Comment 3',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m3.689 ms - 2[0m
+Post Route
+{ Name: 'TA2', Comment: 'Comment 2' }
+{ _id: 5bec859e1a644d0d4571745e,
+  Name: 'TA2',
+  Comment: 'Comment 2' }
+{ _id: 5bec859e1a644d0d4571745e,
+  Name: 'TA2',
+  Comment: 'Comment 2',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m4.201 ms - 2[0m
+Post Route
+{ Name: 'TA2', Comment: 'Comment 1' }
+{ _id: 5bec85a01a644d0d4571745f,
+  Name: 'TA2',
+  Comment: 'Comment 1' }
+{ _id: 5bec85a01a644d0d4571745f,
+  Name: 'TA2',
+  Comment: 'Comment 1',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m7.807 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 },
+  { _id: 5bec858c1a644d0d4571745b,
+    Name: 'TA',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85921a644d0d4571745c,
+    Name: 'TA',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859c1a644d0d4571745d,
+    Name: 'TA2',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859e1a644d0d4571745e,
+    Name: 'TA2',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85a01a644d0d4571745f,
+    Name: 'TA2',
+    Comment: 'Comment 1',
+    __v: 0 } ]
+[0mGET /comment?q= [32m200 [0m5.452 ms - 466[0m
+In the GET route
+{ q: 'TA2' }
+TA2
+[ { _id: 5bec859c1a644d0d4571745d,
+    Name: 'TA2',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859e1a644d0d4571745e,
+    Name: 'TA2',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85a01a644d0d4571745f,
+    Name: 'TA2',
+    Comment: 'Comment 1',
+    __v: 0 } ]
+[0mGET /comment?q=TA2 [32m200 [0m5.850 ms - 235[0m
+In the GET route
+{ q: '' }
+
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 },
+  { _id: 5bec858c1a644d0d4571745b,
+    Name: 'TA',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85921a644d0d4571745c,
+    Name: 'TA',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859c1a644d0d4571745d,
+    Name: 'TA2',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859e1a644d0d4571745e,
+    Name: 'TA2',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85a01a644d0d4571745f,
+    Name: 'TA2',
+    Comment: 'Comment 1',
+    __v: 0 } ]
+[0mGET /comment?q= [36m304 [0m4.814 ms - -[0m
+In the GET route
+{}
+undefined
+[ { _id: 5bec85881a644d0d4571745a,
+    Name: 'TA',
+    Comment: 'Comment 1',
+    __v: 0 },
+  { _id: 5bec858c1a644d0d4571745b,
+    Name: 'TA',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85921a644d0d4571745c,
+    Name: 'TA',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859c1a644d0d4571745d,
+    Name: 'TA2',
+    Comment: 'Comment 3',
+    __v: 0 },
+  { _id: 5bec859e1a644d0d4571745e,
+    Name: 'TA2',
+    Comment: 'Comment 2',
+    __v: 0 },
+  { _id: 5bec85a01a644d0d4571745f,
+    Name: 'TA2',
+    Comment: 'Comment 1',
+    __v: 0 } ]
+[0mGET /comment [32m200 [0m5.643 ms - 466[0m
+in delete rout
+clear succeeded
+In the GET route
+{ q: '' }
+
+[]
+[0mGET /comment?q= [32m200 [0m1.769 ms - 2[0m
+[0mDELETE /deleteComment [0m- [0m- ms - -[0m
+[0mGET / [36m304 [0m0.885 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.456 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.203 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.343 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.486 ms - -[0m
+[0mGET / [32m200 [0m2.298 ms - 2278[0m
+In the GET route
+{ q: '' }
+
+[]
+[0mGET /comment?q= [32m200 [0m2.343 ms - 2[0m
+In the GET route
+{ q: '' }
+
+[]
+[0mGET /comment?q= [36m304 [0m1.752 ms - -[0m
