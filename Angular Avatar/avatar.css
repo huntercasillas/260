@@ -1,0 +1,120 @@
+.User-list {
+  list-style: none;
+}
+
+.Avatar {
+  text-align: center;
+  margin:5px;
+}
+
+.Avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Avatar h4 {
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+.Avatar h5 {
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+
+
+form > * {
+    margin:5px;
+}
+
+.site_container {
+    margin:auto;
+    width:80%;
+    background-color: #2e2f33;
+    padding:1px 20px 20px 20px;
+    border-radius:5px;
+}
+
+#flex_parent {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.flex_child {
+    border: solid 3px white;
+    border-radius:25px;
+    margin:5px;
+    padding:5px;
+}
+
+body {
+    background-color: #278200;
+    font-family: "Arial";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#header {
+    text-align: center;
+    height: 140px;
+    margin-bottom: 10px;
+    background-color: #ce7318;
+    width: 500px;
+    margin: auto;
+    border-radius: 80px;
+}
+
+#logo {
+    padding-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border-color: #8ec3eb;
+}
+
+#spacer {
+    height: 30px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ce7318;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    border-color: white;
+    height: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.center {
+    display: block;
+    height: 130px;
+    width: auto;
+}
+
+h1 {
+    color: #ce7318;
+    font-size: 28px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+}
+
+#userInput {
+    height: 35px;
+    border-radius: 3px;
+}
