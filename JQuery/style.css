@@ -1,0 +1,195 @@
+body {
+    background-color: #33505F;
+    font-family: "Arial";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.maincontent {
+    background-image: url('background.png');
+    padding: 10px;
+    width: 980px;
+    margin: auto;
+    height: 900px;
+}
+
+#header {
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: purple;
+    padding: 10px;
+    width: 980px;
+    margin: auto;
+}
+
+input {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border-color: #8ec3eb;
+}
+
+#inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+textarea {
+    font-family: "Arial";
+    border-radius: 3px;
+}
+
+#weatherButton, button {
+    background-color: purple;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    border-color: white;
+    height: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#stackButton, button {
+    background-color: purple;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+    border-color: white;
+    height: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#cityField {
+    height: 35px;
+    width: 250px;
+    font-size: 10pt;
+}
+
+#stackInput {
+    height: 35px;
+    width: 250px;
+    font-size: 10pt;
+}
+
+#table {
+    width: 900px;
+    margin-left: 0px;
+}
+
+#spacer {
+    height: 20px;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #33505F; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: purple; 
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+#stackSection {
+    width: 500px;
+}
+
+#weatherSection {
+    width: 600px;
+}
+
+#spaceSection {
+    width: 10px;
+}
+
+form {
+    color: white;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+}
+
+g1 {
+    color: purple;
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+g2 {
+    color: purple;
+    font-size: 60px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+g3 {
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+.center {
+display: block;
+height: 140px;
+width: auto;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#stack, #weather {
+    color: white;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: lighter;
+}
