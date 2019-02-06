@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>DogBook</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="javascripts/comment.js"></script>
+    <style>
+        #header {
+    height: 50%;
+    width: 100%;
+    background-image: url('header.png');
+    background-color:  #404040;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#container {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    background-color: #404040;
+}
+
+div, .div, #div {
+    background-color: #404040;
+}
+
+#spacer {
+    height: 30px;
+}
+
+#spacer2 {
+    height: 40px;
+}
+
+
+#name, #owner, #url {
+    height: 40px;
+    color: black;
+}
+
+#comments {
+    color: white;
+    font-size: 16px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: lighter;
+}
+
+form {
+            color: white;
+            font-size: 10px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: lighter;
+        }
+        
+img { 
+   border:6px solid white;
+}
+
+button{
+  background: #1a1a1a;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.4em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:  #404040;
+  color: white;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+form {
+            color: white;
+            font-size: 15px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+
+</head>
+<div id = "header"> </div>
+<body ng-app="comment" ng-controller="MainCtrl">
+    <div id = "container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            
+            <center><form ng-submit="addComment()" style="margin-top30px;">
+                <input placeholder="Doggo Name" id = "name" type="text" ng-model="formContent"></input>
+                <input placeholder="Doggo URL" type="text" id = "url" ng-model="formURL"></input>
+                <input placeholder="Doggo Owner" type="text" id = "owner" ng-model="formOwner"></input>
+                <div id = "spacer"></div>
+                <center><button type="submit">Add Doggo</button></center>
+            </form></center>
+            <div id = "spacer"></div>
+            <center><div ng-repeat="comment in comments | orderBy: '-upvotes'" id = "comments">
+                Doggo: {{comment.title}} &nbsp&nbsp Owner: {{comment.owner}} <br>
+                <center><img ng-src="{{comment.url}}" id = "image" height = "400px" width = "400px"></center> <br>
+                <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span> {{comment.upvotes}} people like this <br>
+                <div id = "spacer2"></div>
+            </div>
+            
+            </center>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
