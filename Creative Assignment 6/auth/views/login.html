@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>Login to Play Breakout</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+        
+<body>  
+    <center><div class="form-container">
+        <p class="form-header">Login</p>
+        <form method="POST" action="/login">
+            <label>Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label>Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" id="login" value="Login">
+        </form>
+    </div></center>
+    <div id = "spacer"></div>
+    <center><a id="signUpLink" href="/signup">Sign Up</a></center>
+    <hr>
+    <center><span id="loginMsg">
+    <%= msg %>
+    </span></center>
+</body>
+        
+</html>
