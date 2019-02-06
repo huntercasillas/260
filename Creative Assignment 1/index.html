@@ -1,37 +1,29 @@
 <html>
     <head>
-        <title>Fire Breather</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Joke Machine</title>
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+        <link href="main.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="source.js"></script>
-
-        <style media="screen">
-        </style>
+        <style media="screen"></style>
     </head>
-    <body onload="init()">
+    <body>
         <div id="container">
             <div id="header">
-                <h1>FIRE &nbsp<span><wbr>BREATHER</wbr></span></h1>
+                <h1>THE<span style="color: #a30500"> JOKE<span style="color: grey"> MACHINE</span></h1>
             </div>
             <div id="about">
-                <h2><center>WELCOME!</center></h2>
-                <l2><center>Play below! Use your cursor to move the dragon and collect as much fire as you can to refuel him!</center></l2>
-                <l2><center>&nbsp</center></l2>
-                <div class="w3-container">
-            
-                    <center>
-                        <div id ="border">  
-                        <div id ="game"></div>
-                        <div id="myBar" class="w3-container w3-round-large w3-purple w3-center" style="width:0%">0%</div>
-                    </center> 
-                        </div>
+                <center><button type = "button" onclick="jokemachine(); return false">Tell Me A Joke!</button></center>
+                <div id = "jokeview">
+                    <center><h2 id = "joketext">...</h2></center>
                 </div>
-            <div id="footer">
-            Copyright 2018
             </div>
+            <div id="footer">
+                Copyright 2018
             </div>
         </div>
+        <script type="text/javascript">
+        </script>
     </body>
 </html>
